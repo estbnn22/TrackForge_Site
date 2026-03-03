@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const SUPPORT_EMAIL = "support@trackforge.app";
+const SUPPORT_MAILTO = `mailto:${SUPPORT_EMAIL}`;
+
 export const metadata: Metadata = {
   title: "Privacy Policy | TrackForge",
   description:
@@ -171,10 +174,10 @@ const sections = [
       <p>
         If you have questions about this policy, contact us at{" "}
         <a
-          href="mailto:estebanmcodes@gmail.com"
+          href={SUPPORT_MAILTO}
           className="font-medium text-rose-300 underline decoration-rose-400/50 underline-offset-4"
         >
-          estebanmcodes@gmail.com
+          {SUPPORT_EMAIL}
         </a>
         .
       </p>
@@ -214,10 +217,10 @@ export default function PrivacyPage() {
               is used, and the choices you have. If you have questions, contact
               us at{" "}
               <a
-                href="mailto:estebanmcodes@gmail.com"
+                href={SUPPORT_MAILTO}
                 className="font-medium text-rose-300 underline decoration-rose-400/50 underline-offset-4"
               >
-                estebanmcodes@gmail.com
+                {SUPPORT_EMAIL}
               </a>
               .
             </p>

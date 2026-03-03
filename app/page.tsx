@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const APP_STORE_URL = "https://apps.apple.com/us/app/trackforge/id6759009365";
+const SUPPORT_EMAIL = "support@trackforge.app";
+const SUPPORT_MAILTO = `mailto:${SUPPORT_EMAIL}`;
 
 const proofPoints = [
   "Log workouts and rest days without breaking flow.",
@@ -105,6 +107,12 @@ export default function Home() {
               className="hidden text-sm text-white/62 transition hover:text-white md:block"
             >
               Privacy
+            </a>
+            <a
+              href={SUPPORT_MAILTO}
+              className="hidden rounded-full border border-white/12 bg-white/[0.05] px-4 py-2 text-sm font-medium text-white/84 transition hover:bg-white/[0.09] md:inline-flex"
+            >
+              Support
             </a>
             <a
               href={APP_STORE_URL}
