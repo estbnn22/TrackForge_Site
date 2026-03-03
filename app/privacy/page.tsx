@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | TrackForge",
@@ -191,12 +192,12 @@ export default function PrivacyPage() {
 
       <section className="mx-auto max-w-5xl px-6 py-16 md:px-10 lg:py-20">
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-7 shadow-[0_25px_80px_rgba(0,0,0,0.28)] backdrop-blur md:p-10">
-          <a
+          <Link
             href="/"
             className="inline-flex items-center rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-white/70 transition hover:bg-white/[0.08]"
           >
             Back to home
-          </a>
+          </Link>
 
           <div className="mt-8 border-b border-white/10 pb-8">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-rose-300/85">
